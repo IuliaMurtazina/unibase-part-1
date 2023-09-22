@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <div class="content">
+    <button class="btn btn--outlined" id="btn-start">Стать партнёром проекта</button>
+  </div>
+
+  <div class="overlay hidden"></div>
+
+  <div class="modal hidden">
+    <div class="modal__content">
+      <h1>Стать партнёром проекта</h1>
+      <form action="" class="form">
+
+        <div class="form__required">
+          <div class="form__group form__group--input-file input-file">
+            <label class="input-file__label" for="image">
+              <span class="input-file__label--text">Логотип (jpeg, png)</span>
+              <img class="input-file__label--image" src="./img/input-file.png" alt="Логотип">
+              <button class="input-file__icon-clear">
+                <img src="./img/clear-icon.svg" alt="Очистить">
+              </button>
+            </label>
+            <input class="input-file__input form-group__input--required" accept=".jpg, .png" type="file" name="image"
+              id="image">
+          </div>
+          <div class="form__group form-group">
+            <label class="form-group__label form-group__label--required" for="name">Название организации</label>
+            <input class="form-group__input form-group__input--required" type="text" id="name" name="name">
+          </div>
+          <div class="form__group form-group">
+            <label class="form-group__label form-group__label--required" for="phone">Телефон</label>
+            <input class="form-group__input form-group__input--required" type="tel" id="phone" name="phone">
+          </div>
+          <div class="form__group form-group">
+            <label class="form-group__label form-group__label--required" for="email">Email</label>
+            <input class="form-group__input form-group__input--required" type="email" id="email" name="email">
+          </div>
+          <div class="form__group form__group--select form-group form-group__select">
+            <label class="form-group__label form-group__label--required" for="direction">Направление</label>
+            <select class="form-group__input form-group__input--select form-group__input--required" name="direction"
+              id="direction">
+              <option value="" selected="true" disabled="disabled">Выберите направление</option>
+              <option value="Экология">Экология</option>
+              <option value="Экология">Экология</option>
+              <option value="Экология">Экология</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__optional">
+          <div class="form__group form-group">
+            <input class="form-group__input form-group__input--optional" type="text" id="site" name="site"
+              placeholder="Ваш сайт">
+            <img class="form-group__icon" src="./img/site.svg" alt="Сайт">
+          </div>
+          <div class="form__group form-group">
+            <input class="form-group__input form-group__input--optional" type="text" id="vk" name="vk"
+              data-prefix="vk.com/" placeholder="vk.com/">
+            <img class="form-group__icon" src="./img/vk.svg" alt="Вконтакте">
+          </div>
+          <div class="form__group form-group">
+            <input class="form-group__input form-group__input--optional" type="text" id="ok" name="ok"
+              data-prefix="ok.com/" placeholder="ok.com/">
+            <img class="form-group__icon" src="./img/ok.svg" alt="Одноклассники">
+          </div>
+          <div class="form__group form-group">
+            <input class="form-group__input form-group__input--optional" type="text" id="facebook" name="facebook"
+              data-prefix="facebook.com/" placeholder="facebook.com/">
+            <img class="form-group__icon" src="./img/facebook.svg" alt="Фейсбук">
+          </div>
+          <div class="form__group form-group">
+            <input class="form-group__input form-group__input--optional" type="text" id="instagram" name="instagram"
+              data-prefix="instagram.com/" placeholder="instagram.com/">
+            <img class="form-group__icon" src="./img/instagram.svg" alt="Инстаграм">
+          </div>
+          <div class="form__group form-group">
+            <input class="form-group__input form-group__input--optional" type="text" id="youtube" name="youtube"
+              data-prefix="youtube.com/" placeholder="youtube.com/">
+            <img class="form-group__icon" src="./img/youtube.svg" alt="Ютуб">
+          </div>
+        </div>
+        <div class="button-group">
+          <button type="submit" class="btn btn--contained">Стать партнёром проекта</button>
+          <button class="btn-cancel">Отменить</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

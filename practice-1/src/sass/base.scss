@@ -1,0 +1,141 @@
+////////////////////////////////////////
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Sans:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Semibold.eot');
+  src: local('Lato Semibold'), local('Lato-Semibold'),
+    url('../fonts/Lato-Semibold.woff') format('woff'),
+    url('../fonts/Lato-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+////////////////////////////////////////
+// Variables
+
+$color-main-dark: #0C1014;
+$color-main-white: #fff;
+
+$color-main-grey: #6A6E72;
+$color-primary: #E5266E;
+$color-secondary: #0848C0;
+$color-accent: #D90000;
+
+$color-stroke: #D6DADE;
+$font-size-primary: 1.6rem;
+
+////////////////////////////////////////
+// MEDIA QUERY MANAGER
+
+$tablet: 768px;
+$phone-big: 480px;
+
+
+////////////////////////////////////////
+// Mixins
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin vert-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin vert-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+////////////////////////////////////////
+// Root
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  color: $color-main-dark;
+  font-size: $font-size-primary;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 144rem;
+  margin: 0 auto;
+
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 3.4rem;
+
+  @media screen and (max-width: $tablet) {
+text-align: center;
+  }
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.content {
+  height: 100vh;
+  width: 100%;
+
+  @include flex-center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 1.5rem;
+  border: 1px solid $color-primary;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  max-width: 60rem;
+  transition: all .5s;
+
+  &--contained {
+    background-color: $color-primary;
+    color: $color-main-white;
+  }
+
+  &--outlined {
+    background-color: $color-main-white;
+    color: $color-primary;
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+  }
+}
+
+.btn-cancel {
+  color: $color-secondary;
+  background: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
