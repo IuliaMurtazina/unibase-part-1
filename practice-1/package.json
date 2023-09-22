@@ -1,8 +1,8 @@
 {
-  "name": "processing-24",
+  "name": "unibase-part-1",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://iuliamurtazina.github.io/cushion",
+  "homepage": "https://iuliamurtazina.github.io/unibase-part-1",
   "main": "script.js",
   "scripts": {
     "dev": "webpack --mode development",
